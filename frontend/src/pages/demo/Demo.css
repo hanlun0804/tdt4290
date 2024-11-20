@@ -1,0 +1,20 @@
+/* GradientBackground.css */
+.animated-gradient {
+  height: 100vh; /* Make the div take full viewport height */
+  background: linear-gradient(270deg, #04000b, #360099, #203150, #2121e6);
+  background-size: 800% 800%;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+/* Animation definition */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
